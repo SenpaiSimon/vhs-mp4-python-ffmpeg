@@ -12,8 +12,7 @@ from contextlib import redirect_stdout
 
 # Search Directory relative to this script -- use "/" not "\"
 # This will search recursivly in all dirs following "seachDir"
-# searchDir = '../Digitalisierung-VHS' 
-searchDir = '../test' 
+searchDir = '../Digitalisierung-VHS'
 targetFileType = '.mpg'
 desiredFileType = '.mp4'
 
@@ -66,9 +65,9 @@ for root, dirs, files in os.walk(searchDir):
 # list the files in log
 with open('log.txt', 'a') as stream:
     with redirect_stdout(stream):
-        print("Found: %s files to convert!\n" % len(inputFiles))
+        print("Found: %s files to convert!" % len(inputFiles))
         for inputFile in inputFiles:
-            print(os.path.basename(inputFile))
+            print("\t- " + os.path.basename(inputFile))
         print("\n")
 
 # Convert steps for each file
@@ -131,7 +130,7 @@ with open('log.txt', 'a') as stream:
             print("End time and date: %s:%s:%s - %s.%s.%s" % (start.hour, start.minute, start.second, start.day, start.month, start.year))
             print("Conversion took --- %s seconds --- total\n" % (time.time() - totalStartTime))
             
-            print("Total of: %s files!") % len(inputFiles)
+            print("Total of: %s files!" % len(inputFiles))
             print("Total Original Size: %s MB" % totalOriginalSize)
             print("Total New File Size: %s MB" % totalNewSize)
             print("Saved: %s MB with compression rate of %s%s\n" % ((totalOriginalSize - totalNewSize), ((totalOriginalSize - totalNewSize) / totalOriginalSize) * 100, "%"))
