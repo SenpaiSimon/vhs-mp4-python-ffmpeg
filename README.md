@@ -20,7 +20,7 @@ pip install ffmpeg-python
 
 ## Setting up file structure
 
-![dirStruct]([http://url/to/img.png](https://github.com/SenpaiSimon/vhs-mp4-python-ffmpeg/blob/main/img/dir.png))
+![dirStruct](https://github.com/SenpaiSimon/vhs-mp4-python-ffmpeg/blob/main/img/dir.png)
 
 1. Create a folder in the same hirarchy level like the folder with all your movies (1)
 2. The `log.txt` and `/done` will be created automatically
