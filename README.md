@@ -20,10 +20,13 @@ pip install ffmpeg-python
 
 ## Setting up file structure
 
-1. Create a folder in the same hirarchy level like the folder with all your movies
-2. Move the script into the newly created folder
-3. Change `searchDir` to `../yourFolder`, where `yourFolder` is the folder where all your movies are
-4. If you convert from vhs grabber files then the `targetFileType = '.mpg'` is already correct
+![dirStruct]([http://url/to/img.png](https://github.com/SenpaiSimon/vhs-mp4-python-ffmpeg/blob/main/img/dir.png))
+
+1. Create a folder in the same hirarchy level like the folder with all your movies (1)
+2. The `log.txt` and `/done` will be created automatically
+3. Move the script into the newly created folder
+4. Change `searchDir` to `../yourFolder`, where `yourFolder` is the folder where all your movies are (2)
+5. If you convert from vhs grabber files then the `targetFileType = '.mpg'` is already correct
 
 ## Working with the script
 
