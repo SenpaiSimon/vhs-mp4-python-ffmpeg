@@ -41,7 +41,7 @@ if os.path.exists("log.txt"):
 with open("log.txt", 'w'):
     pass
 if not os.path.exists("/done"):
-    os.mkdir("/done")
+    os.makedirs("/done")
 
 # setup timer and vars
 totalStartTime = time.time() 
