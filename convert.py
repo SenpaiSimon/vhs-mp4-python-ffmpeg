@@ -130,7 +130,7 @@ with open('log.txt', 'a') as stream:
             print("End time and date: %s:%s:%s - %s.%s.%s" % (start.hour, start.minute, start.second, start.day, start.month, start.year))
             print("Conversion took --- %s seconds --- total\n" % (time.time() - totalStartTime))
             
-            print("Total of \"%s\" files!") % len(inputFiles)
+            print("Total of: %s files!") % len(inputFiles)
             print("Total Original Size: %s MB" % totalOriginalSize)
             print("Total New File Size: %s MB" % totalNewSize)
             print("Saved: %s MB with compression rate of %s%s\n" % ((totalOriginalSize - totalNewSize), ((totalOriginalSize - totalNewSize) / totalOriginalSize) * 100, "%"))
