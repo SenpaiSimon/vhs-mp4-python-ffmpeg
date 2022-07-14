@@ -12,7 +12,8 @@ from contextlib import redirect_stdout
 
 # Search Directory relative to this script -- use "/" not "\"
 # This will search recursivly in all dirs following "seachDir"
-searchDir = '../Digitalisierung-VHS' 
+# searchDir = '../Digitalisierung-VHS' 
+searchDir = '../test' 
 targetFileType = '.mpg'
 desiredFileType = '.mp4'
 
@@ -40,8 +41,8 @@ if os.path.exists("log.txt"):
     os.remove("log.txt")
 with open("log.txt", 'w'):
     pass
-if not os.path.exists("/done"):
-    os.makedirs("/done")
+if not os.path.exists("done"):
+    os.makedirs("done")
 
 # setup timer and vars
 totalStartTime = time.time() 
@@ -74,7 +75,7 @@ with open('log.txt', 'a') as stream:
 for inputFile in inputFiles:
     # start timer and output
     fileTimeStart = time.time()
-    inputFile = "../" + inputFile[3:]
+    # inputFile = "../" + inputFile[3:]
     
     output = inputFile.removesuffix(targetFileType) + desiredFileType
 
