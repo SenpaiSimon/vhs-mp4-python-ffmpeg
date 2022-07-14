@@ -15,7 +15,7 @@ ffmpeg -version
 Install the librarys using pip install
 
 ```bash
-pip install ffmpeg-python
+pip install -r requirements.txt
 ```
 
 ## Setting up file structure
