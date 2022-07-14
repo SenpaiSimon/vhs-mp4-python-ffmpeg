@@ -36,6 +36,7 @@ pip install ffmpeg-python
 4. If you want to see the whole progress, you can look into the generated `log.txt`
 5. This will also display some extra logging, like times and storage savings
 6. If a file is complete, it will move the file with the extension of `targetFileType` into a folder in the script directory
+7. !! This Script will keep the original folder structure in your `searchDir` !! 
 
 ## Addition
 If you want to compress and convert your files properly then set `extendedMode` in `line 27` to `True`
