@@ -23,14 +23,15 @@ pip install -r requirements.txt
 ![dirStruct](https://github.com/SenpaiSimon/vhs-mp4-python-ffmpeg/blob/main/img/dir.png)
 
 1. The `log.txt` and `/done` will be created automatically
-2. Put your files or even files sctructure into the `input`-directory
+2. Put your files or even files sctructure into the `input`-directory (1)
 3. This script will keep the file structure provided in the `input`-directory!
+4. The original files will end up in the `done`-directory (2)
 
 ## Working with the script
 
 > Name all your files with the name you want to keep! This script will embed the file Name (without the file extension like `.mpg`) into the metadata of the file!
 
-1. Execute it using `python convert.py`
+1. Execute it using `python convert.py` when inside the `script`-directory
 2. You have to keep this terminal open until the script is done!
 3. You can monitor the conversion of the currrent file in the terminal window
 4. If you want to see the whole progress, you can look into the generated `log.txt`
