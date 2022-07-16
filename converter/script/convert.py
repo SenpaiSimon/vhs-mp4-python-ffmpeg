@@ -12,7 +12,7 @@ from contextlib import redirect_stdout
 
 # Search Directory relative to this script -- use "/" not "\"
 # This will search recursivly in all dirs following "seachDir"
-searchDir = '../Digitalisierung-VHS'
+searchDir = '../input'
 targetFileType = '.mpg'
 desiredFileType = '.mp4'
 
