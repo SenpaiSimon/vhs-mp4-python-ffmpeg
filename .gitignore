@@ -1,5 +1,5 @@
 *.txt
 done/*
-*/input/*
+/input/*
 *.mpg
 *.mp4
